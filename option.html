@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/style/option00.css">
+	<title>"Name" options</title>
+</head>
+<body>
+	<main class="container">
+		<header>
+			<h1 class="title-header">Configuration de l'extension</h1>
+		</header>
+		<hr class="divider">
+		<section>
+			<div class="option" id="twitch-option">
+				<div class="option-label">
+					<h2>Twitch</h2>
+					<p>Recevoir une notification lorsque <span id="streamer" class="name"></span> est en stream sur <strong>Twitch</strong></p>
+				</div>
+				<div class="option-btn">
+					<input type="checkbox" id="twitch" name="twitch" class="btn" hidden>
+					<label for="twitch" id="twitch-label">
+						<span class="btn btn-on">On</span>
+						<span class="btn btn-off">Off</span>
+					</label>
+				</div>
+			</div>
+			<div class="option" id="mute-option">
+				<div class="option-label">
+					<h2>Sourdine</h2>
+					<p>Activer les notifications avec alerte sonore <small>(Chrome v70+)</small></p>
+				</div>
+				<div class="option-btn">
+					<input type="checkbox" id="mute" name="mute" class="btn" hidden>
+					<label for="mute" id="mute-label">
+						<span class="btn btn-on">On</span>
+						<span class="btn btn-off">Off</span>
+					</label>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<p class="text-footer">Extension développée par <span class="dev">LNL FNDSA</span></p>
+		</footer>
+	</main>
+	<script src="assets/script/option.js"></script>
+</body>
+</html>

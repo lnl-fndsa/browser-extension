@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+#container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+#container header {
+  background-color: #444;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+}
+#container header .logo img {
+  width: 90%;
+}
+#container header .headerTxt {
+  flex-grow: 1;
+  text-align: center;
+}
+#container header .headerTxt h1 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+}
+#container hr {
+  width: 90%;
+  margin: 20px auto;
+}
+#container section {
+  padding-bottom: 100px;
+}
+#container section .option {
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#container section .option:hover {
+  background-color: #ddd;
+}
+#container section .option .optionLabel h2 {
+  margin: 0 0 0.6rem 0;
+  padding: 0;
+  font-size: 1.3rem;
+}
+#container section .option .optionLabel p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+#container section .option .optionLabel p .streamerName {
+  font-weight: bold;
+}
+#container section .option .optionButtons label .btn {
+  cursor: pointer;
+  border: 2px solid #fff;
+  width: 70px;
+  text-align: center;
+  padding: 0.7rem 0;
+  font-size: 1.4rem;
+  border-radius: 8px;
+}
+#container section .option .optionButtons label .toggleOn {
+  background-color: #34CA49;
+  color: #fff;
+  display: none;
+}
+#container section .option .optionButtons label .toggleOff {
+  background-color: #aaa;
+  color: #fff;
+  display: none;
+}
+#container section .option .optionButtons label .checked {
+  display: inline-block;
+}
+#container footer {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  color: #bbb;
+  font-size: 0.7rem;
+}
+#container footer .footerTxt {
+  border-bottom: solid 1px #bbb;
+}
+#container footer .footerTxt .dev {
+  font-weight: 500;
+  color: #aaa;
+}
+
+/*# sourceMappingURL=options.css.map */

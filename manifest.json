@@ -1,0 +1,31 @@
+{
+    "name": "<Name> Live Stream",
+    "description": "Recevez une notification et ne ratez aucun live sur la chaîne Twitch de <Name>",
+    "version": "1.2",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["classes.js", "index.js"],
+        "persistent": true
+    },
+    "icons": {
+        "128": "assets/icons/icon128.png",
+        "48": "assets/icons/icon48.png",
+        "32": "assets/icons/icon32.png",
+        "16": "assets/icons/icon16.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "assets/icons/icon16.png"
+    },
+    "options_ui": {
+        "page": "option.html",
+        "open_in_tab": true
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "notifications",
+        "alarms",
+        "https://api.twitch.tv/*"
+    ]
+}

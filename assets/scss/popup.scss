@@ -1,0 +1,183 @@
+// Colors
+$tooltip: #701a27;
+$on: #34ca49;
+$off: #aaa;
+
+// Main Styles
+*{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body{
+	margin: 0 0 0 1px;
+	padding: 0;
+	font-family: sans-serif;
+	width: 300px;
+	overflow: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+#container{
+	width: 100%;
+	text-align: center;
+
+	header{
+		position: relative;
+
+		.logo{
+			width: 100%;
+			display: block;
+			background-color: #333;
+		}
+
+		.options{
+			position: absolute;
+			top: 5px;
+			right: 5px;
+
+			a{
+				color: #fff;
+				display: block;
+				padding: 5px;
+				border-radius: 5px;
+				font-size: 1.2rem;
+
+				&:hover{
+					background-color: rgba(221, 221, 221, 0.5);
+				}
+			}
+		}
+	}
+
+	section{
+		background-color: #fff;
+
+		.content{
+			padding: 40px 0 50px 0;
+
+			h1{
+				margin: 0 30px 20px 30px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-size: 1.5rem;
+			}
+
+			h2{
+				margin: 0 0 10px 0;
+				padding: 0;
+				font-size: 1.5rem;
+				color: #555;
+			}
+
+			img{
+				width: 12%;
+			}
+
+			.titleOn{
+				color: #fff;
+				background-color: $on;
+			}
+
+			.titleOff{
+				color: #fff;
+				background-color: $off;
+			}
+
+			.contentLink{
+				.btn{
+					padding: 10px;
+					text-transform: uppercase;
+					font-size: 1.2rem;
+					color: #6441A4;
+					background: #fff;
+					font-weight: bold;
+					transition: 0.3s;
+					box-shadow: 1px 2px 3px #888;
+
+					&:hover{
+						color: #fff;
+						background: #6441A4;
+					}
+				}
+			}
+		}
+
+		.liveOn, .liveOff{
+			display: none;
+		}
+
+		.activeContent{
+			display: block;
+		}
+	}
+
+	footer{
+		background-color: #701a27;
+
+		.socialNavBar{
+			width: 280px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-around;
+
+			&:hover{
+				a:not(:hover){
+					opacity: 0.5;
+				}
+			}
+
+			.socialLink{
+				position: relative;
+				color: #fff;
+				padding: 10px;
+				display: block;
+				font-size: 1.5rem;
+				width: 56px;
+	  			transition: opacity 0.2s;
+
+				&:hover{
+					.tooltiptext {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+
+				.tooltiptext {
+					visibility: hidden;
+					font-size: 0.8rem;
+					width: 80px;
+					background-color: $tooltip;
+					color: #fff;
+					border-radius: 6px;
+					padding: 5px 0;
+					position: absolute;
+					z-index: 1;
+					bottom: 120%;
+					left: 50%;
+					margin-left: -40px;
+					opacity: 0;
+					transition: opacity 1s;
+					border: solid 1px $tooltip;
+
+					&::after{
+						content: "";
+						position: absolute;
+						top: 100%;
+						left: 50%;
+						margin-left: -5px;
+						border-width: 5px;
+						border-style: solid;
+						border-color: $tooltip transparent transparent transparent;
+					}
+				}
+			}
+		}
+	}
+}

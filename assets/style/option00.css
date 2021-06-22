@@ -1,0 +1,106 @@
+/* Variables */
+:root{
+    --colorTextHeader: rgba(255, 255, 255, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #444;
+    color: var(--colorTextHeader);
+    display: flex;
+    align-items: center;
+}
+
+header .title-header{
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+}
+
+.divider{
+    width: 90%;
+    margin: 20px auto;
+}
+
+section .option{
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .option:hover{
+    background-color: #ddd;
+}
+
+section .option .option-label h2{
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+section .option .option-label p{
+    font-size: 1.2rem;
+}
+
+section .option .option-label .name{
+    font-weight: bold;
+}
+
+section .option .option-btn .btn{
+    cursor: pointer;
+    border: 2px solid #fff;
+    width: 70px;
+    text-align: center;
+    padding: 0.7rem 0;
+    font-size: 1.4rem;
+    border-radius: 8px;
+}
+
+section .option .option-btn .btn-on{
+    background-color: #34CA49;
+    color: #fff;
+    display: none;
+}
+
+section .option .option-btn .btn-off{
+    background-color: #aaa;
+    color: #fff;
+    display: none;
+}
+
+section .option .option-btn .checked{
+    display: inline-block;
+}
+
+footer{
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .text-footer{
+    border-bottom: 1px solid #666;
+}
